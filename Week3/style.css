@@ -1,0 +1,38 @@
+body{
+    font-family: Anuphan;
+    background-color: #202020;
+}
+ul{
+    background-color: #161616;
+    list-style: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    float: left;
+
+}
+li a{
+    display: inline-block;
+    padding: 20px;
+    margin: 0px;
+    text-decoration: none;
+    color: #ffffff;
+}
+li :hover{
+    color: #ff7300;
+    /* background-color: #ffffff;
+    padding: 10px; */
+}
+.nav-end{
+    float: right;
+}
+.active-link{
+    color: #ff7300;
+    background-color: #0c0c0c;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin: 5px; */
+}
