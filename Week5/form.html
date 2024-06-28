@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="auth.php" method="get" class="form-container">
+        <h1>กรอกข้อมูล</h1>
+        <input type="text" name="fullname" placeholder="ชื่อ-สกุล" class="input-field"><br>
+        <input type="password" name="pass" placeholder="รหัสผ่าน" class="input-field"><br>
+        <input type="date" name="dateofbirth" class="input-field"><br>
+        <input type="number" min="1" max="99" name="ages" placeholder="อายุ" class="input-field"><br>
+        <fieldset class="radio-group">
+            <legend>เพศ</legend>
+            <label><input type="radio" name="gender" value="male"> ชาย</label>
+            <label><input type="radio" name="gender" value="female"> หญิง</label>
+            <label><input type="radio" name="gender" value="lgbtq"> เก</label>
+            <label><input type="radio" name="gender" value="nah"> ไม่ต้องการระบุ</label>
+        </fieldset><br>
+        <label for="color">สีที่ชอบ:</label>
+        <select name="color" id="color" class="input-field">
+            <option value="white">สีขาว</option>
+            <option value="black">สีดำ</option>
+            <option value="red">สีแดง</option>
+            <option value="blue">สีน้ำเงิน</option>
+            <option value="yellow">สีเหลือง</option>
+            <option value="green">สีเขียว</option>
+            <option value="purple">สีม่วง</option>
+            <option value="orange">สีส้ม</option>
+            <option value="pink">สีชมพู</option>
+        </select><br>
+        <fieldset class="checkbox-group">
+            <legend>งานอดิเรก</legend>
+            <label><input type="checkbox" name="hobby" id="playing-game"> เล่นเกม</label>
+            <label><input type="checkbox" name="hobby" id="coding"> เขียนโค้ด</label>
+            <label><input type="checkbox" name="hobby" id="listen-to-music"> ฟังเพลง</label>
+            <label><input type="checkbox" name="hobby" id="watching-movie"> ดูหนัง</label>
+            <label><input type="checkbox" name="hobby" id="eat"> กิน</label>
+        </fieldset><br>
+        <input type="submit" value="ส่งข้อมูล" class="btn1">
+        <input type="reset" value="ล้างข้อมูล" class="btn2">
+    </form><br>
+    <a href="https://www.google.com/" class="link">Google</a>
+</body>
+
+</html>
